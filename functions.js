@@ -5,23 +5,23 @@ $(document).ready(function() {
         IndicatorsNum = indicators.length;
 
     // Menu Expansion
-//     if (matchMedia) {
-//     var mq = window.matchMedia("(max-width: 740px)");
-//     mq.addListener(console.log("changed"));
-//     WidthChange(mq);
-// }
-//     function WidthChange(mq){
-//       var menuHeight = -($(".menu").height())-10;
-//       if (mq.matches) {
-//         console.log(menuHeight);
-//     $(".services").css("transform", "translateY("+(menuHeight)+"px)");
-//     $(".menu-expand").on("click", function(){
-//       $(".services").toggleClass("down");
-//     });}else{
-//       $(".services").css("transform", "translateY("+0+"px)");
-//     }};
-$(".menu-expand").on("click", function(){
-      $(".menu").toggleClass("open");
+    //     if (matchMedia) {
+    //     var mq = window.matchMedia("(max-width: 740px)");
+    //     mq.addListener(console.log("changed"));
+    //     WidthChange(mq);
+    // }
+    //     function WidthChange(mq){
+    //       var menuHeight = -($(".menu").height())-10;
+    //       if (mq.matches) {
+    //         console.log(menuHeight);
+    //     $(".quote").css("transform", "translateY("+(menuHeight)+"px)");
+    //     $(".menu-expand").on("click", function(){
+    //       $(".quote").toggleClass("down");
+    //     });}else{
+    //       $(".quote").css("transform", "translateY("+0+"px)");
+    //     }};
+    $(".menu-expand").on("click", function() {
+        $(".menu").toggleClass("open");
     });
     // Time Loop Function
     setInterval(function() {

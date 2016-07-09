@@ -34,11 +34,9 @@
 .logo a {
     display: block;
 }
-
-.menu-expand{
-  display: none;
+.menu-expand {
+    display: none;
 }
-
 .menu ul {
     width: 80vw;
     display: flex;
@@ -74,9 +72,9 @@
     transition: all 200ms ease-in-out;
 }
 
-/*Services*/
+/*quote*/
 
-.services {
+.quote {
     width: 100vw;
     background-color: #709dca;
     height: 600px;
@@ -84,7 +82,7 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-.services h1 {
+.quote h1 {
     padding-top: 100px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -93,19 +91,19 @@
     text-align: center;
     text-transform: uppercase;
 }
-.services p {
+.quote p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: white;
     text-align: center;
     font-size: 16px;
 }
-.services form {
+.quote form {
     padding-top: 20px;
     display: flex;
     justify-content: center;
 }
-.services form input {
+.quote form input {
     display: inline-block;
     width: 280px;
     height: 45px;
@@ -118,19 +116,19 @@
     font-size: 13px;
     color: #a9a9a9;
 }
-.services form input[name="Full Name"] {
+.quote form input[name="Full Name"] {
     background: url(Images/Icons/user-shape.svg) no-repeat 5px, white;
     background-size: 15px 15px;
 }
-.services form input[name="Email"] {
+.quote form input[name="Email"] {
     background: url(Images/Icons/envelope.svg) no-repeat 5px, white;
     background-size: 15px 15px;
 }
-.services form input[name="Phone Number"] {
+.quote form input[name="Phone Number"] {
     background: url(Images/Icons/telephone.svg) no-repeat 5px, white;
     background-size: 15px 15px;
 }
-.services form input[type="submit"] {
+.quote form input[type="submit"] {
     width: auto;
     padding: 0 30px;
     margin-right: 0;
@@ -141,18 +139,17 @@
     border: 1px solid #ffbb42;
     transition: all 200ms ease-in-out;
 }
-
-.services form input[type="submit"]:hover {
-  background-color: white;
-  color:#868686;
-  border: 1px solid #ffbb42;
-  transition: all 200ms ease-in-out;
+.quote form input[type="submit"]:hover {
+    background-color: white;
+    color: #868686;
+    border: 1px solid #ffbb42;
+    transition: all 200ms ease-in-out;
 }
-.services form input:not([type="submit"]){
-  border: 1px solid white;
-  transition: all 200ms ease-in-out;
+.quote form input:not([type="submit"]) {
+    border: 1px solid white;
+    transition: all 200ms ease-in-out;
 }
-.services form input:not([type="submit"]):focus {
+.quote form input:not([type="submit"]):focus {
     outline: none;
     border: 1px solid #ffbb42;
     transition: all 200ms ease-in-out;
@@ -181,21 +178,20 @@ img.out {
     transition: all 200ms ease-in-out;
 }
 img.in {
-  animation: slidein .5s 1 ease-in-out;
+    animation: slidein .5s 1 ease-in-out;
 }
-
 @keyframes slidein {
- 0%{
-   opacity: 0;
-   transform: translatex(0%);
-   transform: scale(.1);
- }
- 100%{
-   opacity: 1;
-   transform: translateX(0);
-   transform: translateY(0);
-   transform: scale(1);
- }
+    0% {
+        opacity: 0;
+        transform: translatex(0%);
+        transform: scale(.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        transform: translateY(0);
+        transform: scale(1);
+    }
 }
 .indicator {
     width: 70px;
@@ -219,103 +215,173 @@ span.active {
     transition: all 200ms ease-in-out;
 }
 
-/*Media Queries*/
-@media (max-width: 740px) {
-/*Navigation*/
-.nav{
-  flex-wrap: wrap;
-  height:auto;
-}
-.logo{
-  width: 70vw;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-.menu-expand{
-  display: block;
-  width: 30vw;
-  height: auto;
-  padding-top: 15px;
-}
-.menu-expand span{
-  position: relative;
-  left: calc(100% - 40px);
-  width: 30px;
-  height: 3px;
-  background-color: black;
-  display: block;
-  margin-top: 5px;
-  border-radius: 1px;
-  cursor: pointer;
-}
-.menu {
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  max-height:0;
-  overflow: hidden;
-  transition: max-height 100ms ease-out;
-}
-.menu.open{
-  max-height:70px;
-  padding-bottom: 10px;
-  transition: max-height 100ms ease-out;
-}
-.menu ul{
-  width: inherit;
-  flex-wrap: wrap;
-
-}
-.menu ul li {
-  width:auto;
-  height: auto;
-}
-
-.menu ul li a {
-  padding: 5px 5px;
-  border-bottom: 1px solid #ffbb42;
-}
 /*Services*/
 
-.services{
-  height: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  position: relative;
+.services {
+    background-color: white;
+    height: auto;
+    width: 100vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 200px;
 }
-.services h1 {
-  padding-top: 40px;
-  font-size: 24px;
+.sec-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    color: #394b50;
 }
-.services p{
-  margin-top: 5px;
-  font-size: 13px;
+.title-caption {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #394b50;
 }
-.services.down{
-  transform: translateY(0) !important;
-  transition: all 200ms ease-in-out;
+.serv-show-container {
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 95px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-.services form {
-  flex-direction: column;
-  padding-bottom: 20px;
+.serv-show {
+    width: 50%;
+    height: 125px;
+    margin: 0;
+    margin-bottom: 85px;
 }
-.services form input {
-  display: block;
-  width: 300px;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
+.serv-icon {
+    display: inline-block;
+    width: 15%;
+    height: 100%;
+    vertical-align: top;
 }
-.services form input[type="submit"]{
-  width: 300px;
-  margin-right: auto;
+.serv-icon svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.serv-text {
+    display: inline-block;
+    width: 80%;
+}
+.serv-text-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #394b50;
+    line-height: 1.375;
+}
+.serv-text-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #7b7b7b;
+    margin-top: 25px;
+    height: 60px;
+    line-height: 1.692;
 }
 
-.slider{
-  display: none;
-  /*try to make Slider a background with balck shade over it
+/*Media Queries*/
+
+@media (max-width: 750px) {
+    /*Navigation*/
+    .nav {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .logo {
+        width: 70vw;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .menu-expand {
+        display: block;
+        width: 30vw;
+        height: auto;
+        padding-top: 15px;
+    }
+    .menu-expand span {
+        position: relative;
+        left: calc(100% - 40px);
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        display: block;
+        margin-top: 5px;
+        border-radius: 1px;
+        cursor: pointer;
+    }
+    .menu {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 100ms ease-out;
+    }
+    .menu.open {
+        max-height: 70px;
+        padding-bottom: 10px;
+        transition: max-height 100ms ease-out;
+    }
+    .menu ul {
+        width: inherit;
+        flex-wrap: wrap;
+    }
+    .menu ul li {
+        width: auto;
+        height: auto;
+    }
+    .menu ul li a {
+        padding: 5px 5px;
+        border-bottom: 1px solid #ffbb42;
+    }
+    /*quote*/
+    .quote {
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+    }
+    .quote h1 {
+        padding-top: 40px;
+        font-size: 24px;
+    }
+    .quote p {
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    .quote.down {
+        transform: translateY(0) !important;
+        transition: all 200ms ease-in-out;
+    }
+    .quote form {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .quote form input {
+        display: block;
+        width: 300px;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .quote form input[type="submit"] {
+        width: 300px;
+        margin-right: auto;
+    }
+    .slider {
+        display: none;
+        /*try to make Slider a background with balck shade over it
   position: absolute;
   top: 0;
   left: 0;
@@ -325,15 +391,70 @@ span.active {
   background: none;
   margin-top: 0;
   height:100%;*/
-}
-/*.slider img{
+    }
+    /*.slider img{
   top:0;
   left: 0;
   height:100%;
   width: auto;
 }*/
-.indicator{
-  display: none;
+    .indicator {
+        display: none;
+    }
+}
+@media (max-width: 750px) {
+    .services {
+        padding-top: 45px;
+    }
+    .sec-title {
+        font-size: 22px;
+        letter-spacing: -1px;
+    }
+    .title-caption {
+        font-size: 13px;
+    }
+    .serv-show-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 20px;
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .serv-icon {
+        width: 30px;
+        vertical-align: middle;
+    }
+    .serv-icon svg {
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .serv-show {
+        height: auto;
+        width: 90%;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .serv-text {
+        display: inline-block;
+        height: 50px;
+        padding-left: 10px;
+    }
+    .serv-text-title {
+        display: block;
+        height: 100%;
+        padding-top: 17px;
+        font-size: 12px;
+    }
+    .serv-text-body {
+        display: none;
+    }
+}
+
+@media (max-width: 870px) {
+.serv-text{
+  padding-left: 10px;
 }
 }
 /*font-family: 'Montserrat', sans-serif;
