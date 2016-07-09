@@ -1,16 +1,341 @@
-/* latin */
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+*, html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-html, body {
-box-sizing: border-box;
+/*Navigation*/
+
+.nav {
+    width: 100vw;
+    display: flex;
+    height: 65px;
+}
+.logo {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo a {
+    display: block;
 }
 
+.menu-expand{
+  display: none;
+}
+
+.menu ul {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    padding: 0;
+}
+.menu ul li {
+    display: flex;
+    margin: 0;
+    height: 65px;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    transition: all 200ms ease-in-out;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #868686;
+    text-transform: uppercase;
+    font-size: 13.5px;
+    transition: all 200ms ease-in-out;
+    padding: 8px 13px;
+    border-radius: 2px;
+    text-align: center;
+}
+.menu ul li:hover a {
+    background-color: #ffbb42;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+
+/*Services*/
+
+.services {
+    width: 100vw;
+    background-color: #709dca;
+    height: 600px;
+    transition: all 200ms ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.services h1 {
+    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.services p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+.services form {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.services form input {
+    display: inline-block;
+    width: 280px;
+    height: 45px;
+    margin-right: 5px;
+    border-radius: 2px;
+    padding-left: 30px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #a9a9a9;
+}
+.services form input[name="Full Name"] {
+    background: url(Images/Icons/user-shape.svg) no-repeat 5px, white;
+    background-size: 15px 15px;
+}
+.services form input[name="Email"] {
+    background: url(Images/Icons/envelope.svg) no-repeat 5px, white;
+    background-size: 15px 15px;
+}
+.services form input[name="Phone Number"] {
+    background: url(Images/Icons/telephone.svg) no-repeat 5px, white;
+    background-size: 15px 15px;
+}
+.services form input[type="submit"] {
+    width: auto;
+    padding: 0 30px;
+    margin-right: 0;
+    background-color: #ffbb42;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid #ffbb42;
+    transition: all 200ms ease-in-out;
+}
+
+.services form input[type="submit"]:hover {
+  background-color: white;
+  color:#868686;
+  border: 1px solid #ffbb42;
+  transition: all 200ms ease-in-out;
+}
+.services form input:not([type="submit"]){
+  border: 1px solid white;
+  transition: all 200ms ease-in-out;
+}
+.services form input:not([type="submit"]):focus {
+    outline: none;
+    border: 1px solid #ffbb42;
+    transition: all 200ms ease-in-out;
+}
+.slider {
+    width: 650px;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 345px;
+    background: url(Images/Laptop.png) no-repeat center;
+    position: relative;
+    overflow: hidden;
+}
+.slider img {
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 103px;
+    transform: translateX(0%);
+    transition: all 200ms ease-in-out;
+}
+img.out {
+    transform: scale(.1);
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+img.in {
+  animation: slidein .5s 1 ease-in-out;
+}
+
+@keyframes slidein {
+ 0%{
+   opacity: 0;
+   transform: translatex(0%);
+   transform: scale(.1);
+ }
+ 100%{
+   opacity: 1;
+   transform: translateX(0);
+   transform: translateY(0);
+   transform: scale(1);
+ }
+}
+.indicator {
+    width: 70px;
+    height: auto;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.indicator span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 2px solid #dedfe0;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+span.active {
+    border: 3px solid #1ca8dd;
+    transition: all 200ms ease-in-out;
+}
+
+/*Media Queries*/
+@media (max-width: 740px) {
+/*Navigation*/
+.nav{
+  flex-wrap: wrap;
+  height:auto;
+}
+.logo{
+  width: 70vw;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.menu-expand{
+  display: block;
+  width: 30vw;
+  height: auto;
+  padding-top: 15px;
+}
+.menu-expand span{
+  position: relative;
+  left: calc(100% - 40px);
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  display: block;
+  margin-top: 5px;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.menu {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  max-height:0;
+  overflow: hidden;
+  transition: max-height 100ms ease-out;
+}
+.menu.open{
+  max-height:70px;
+  padding-bottom: 10px;
+  transition: max-height 100ms ease-out;
+}
+.menu ul{
+  width: inherit;
+  flex-wrap: wrap;
+
+}
+.menu ul li {
+  width:auto;
+  height: auto;
+}
+
+.menu ul li a {
+  padding: 5px 5px;
+  border-bottom: 1px solid #ffbb42;
+}
+/*Services*/
+
+.services{
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+.services h1 {
+  padding-top: 40px;
+  font-size: 24px;
+}
+.services p{
+  margin-top: 5px;
+  font-size: 13px;
+}
+.services.down{
+  transform: translateY(0) !important;
+  transition: all 200ms ease-in-out;
+}
+.services form {
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.services form input {
+  display: block;
+  width: 300px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services form input[type="submit"]{
+  width: 300px;
+  margin-right: auto;
+}
+
+.slider{
+  display: none;
+  /*try to make Slider a background with balck shade over it
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: none;
+  margin-top: 0;
+  height:100%;*/
+}
+/*.slider img{
+  top:0;
+  left: 0;
+  height:100%;
+  width: auto;
+}*/
+.indicator{
+  display: none;
+}
+}
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;*/

@@ -10,11 +10,56 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <script src=""></script>
+    <!--Navigation start -->
+    <section class="nav">
+        <div class="logo">
+            <a href="#"><img src="images/Logo.png" alt="Company Logo" /></a>
+        </div>
+        <div class="menu-expand">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Pricing Table</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Happy Clients</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Services Start -->
+    <section Class="services" id="services">
+        <h1>Boost up your Local business</h1>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting
+        </p>
+        <form>
+            <input type="text" name="Full Name" placeholder="Full Name">
+            <input type="email" name="Email" value="" placeholder="Email Address">
+            <input type="tel" name="Phone Number" value="" placeholder="Phone Number">
+            <input type="submit" value="REQUEST A QUOTE">
+        </form>
+        <div class="slider">
+            <img class="in" src="Images/screen1.jpg" alt="example picture 1" />
+            <img class="out" src="Images/screen2.jpg" alt="example picture 2" />
+            <img class="out" src="Images/screen3.jpg" alt="example picture 3" />
+        </div>
+        <div class="indicator">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <script src="functions.js"></script>
 </body>
 
 </html>
