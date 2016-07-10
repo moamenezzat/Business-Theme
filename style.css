@@ -37,6 +37,9 @@
 .menu-expand {
     display: none;
 }
+.menu {
+    padding-right: 10px;
+}
 .menu ul {
     width: 80vw;
     display: flex;
@@ -230,7 +233,7 @@ span.active {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
     color: #394b50;
 }
 .title-caption {
@@ -289,65 +292,177 @@ span.active {
 }
 
 /*About US*/
-.about{
-  width: 100vw;
-  height: auto;
-  display: flex;
-}
 
-.left-side{
-  width:50%;
-  background: url("Images/about us.jpg") no-repeat center;
-  background-size: cover;
+.about {
+    width: 100vw;
+    height: auto;
+    display: flex;
 }
-.right-side{
-width:50%;
-background: #ffc155;
-padding: 160px 75px;
+.left-side {
+    width: 50%;
+    background: url("Images/about us.jpg") no-repeat center;
+    background-size: cover;
 }
-.right-side .sec-title{
-  color: white;
-  letter-spacing: -2px;
-  text-align: left;
+.right-side {
+    width: 50%;
+    background: #ffc155;
+    padding: 160px 75px;
+}
+.right-side .sec-title {
+    color: white;
+    letter-spacing: -1px;
+    text-align: left;
 }
 .right-side p {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
-  line-height: 1.846;
-  margin-top: 24px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.846;
+    margin-top: 24px;
 }
-
 .cta {
-  display: block;
-  margin-top: 35px;
-  width: 130px;
-  height: 42px;
-  text-decoration: none;
-  color: white;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 2px;
-  padding-top: 10px;
-  background-color: #ffbb42;
-  transition: all 200ms ease-in-out;
-
+    display: block;
+    margin-top: 35px;
+    width: 130px;
+    height: 42px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    padding-top: 10px;
+    background-color: #ffbb42;
+    transition: all 200ms ease-in-out;
 }
 .right-side .cta {
-  border: 1px solid #e7ad48;
-  background-color: transparent;
+    border: 1px solid #e7ad48;
+    background-color: transparent;
+}
+.right-side .cta:hover {
+    background-color: white;
+    color: #868686;
+    transition: all 200ms ease-in-out;
 }
 
-.right-side .cta:hover {
-  background-color: white;
-  color: #868686;
-  transition: all 200ms ease-in-out;
+/*Prices Table*/
+
+.prices {
+    width: 100vw;
+    background: #e7edf3;
+    height: auto;
+    padding-top: 130px;
+    padding-bottom: 170px
 }
+.table {
+    width: 80vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.right-cell, .left-cell {
+    width: 390px;
+    height: auto;
+    background: white;
+    border-radius: 2px;
+    padding: 50px 28px;
+}
+.middle-cell {
+    width: 395px;
+    height: auto;
+    background: #709dca;
+    border-radius: 2px;
+    padding: 77px 28px 70px 28px;
+}
+.plan-side {
+    font-family: 'Lato', sans-serif;
+    font-size: 13.5px;
+    color: #b5bbc1;
+    line-height: 2.963;
+    text-align: center;
+    text-transform: uppercase;
+}
+.plan-middle {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 13.5px;
+    line-height: 2.963;
+    text-align: center;
+    text-transform: uppercase;
+}
+.plan-title {
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.plan-price {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffbb42;
+    line-height: 1;
+    margin-top: 30px;
+}
+.plan-middle.plan-price {
+    color: white;
+}
+.plan-price span {
+    vertical-align: super;
+    font-size: 35px;
+}
+.price-caption {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding-bottom: 35px;
+}
+.plan-expand {
+    display: none;
+}
+.plan-detail {
+    border-top: 1px solid #e2e9f0;
+}
+.table .cta {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ffbb42;
+    transition: all 200ms ease-in-out;
+}
+.cta:hover {
+    background-color: white;
+    color: #868686;
+    border: 1px solid #ffbb42;
+    transition: all 200ms ease-in-out;
+}
+
 /*Media Queries*/
 
-@media (max-width: 750px) {
+@media (max-width: 895px) {
+    .plan-side, .plan-middle {
+        font-size: 10.5px;
+    }
+    .plan-title {
+        font-size: 19px;
+    }
+    .plan-price {
+        font-size: 45px;
+    }
+    .plan-price span {
+        font-size: 25px;
+    }
+}
+@media (max-width: 870px) {
+    .serv-text {
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 750px) {
     /*Navigation*/
     .nav {
         flex-wrap: wrap;
@@ -384,9 +499,10 @@ padding: 160px 75px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 100ms ease-out;
+        padding-right: 0;
     }
     .menu.open {
-        max-height: 70px;
+        max-height: 64px;
         padding-bottom: 10px;
         transition: max-height 100ms ease-out;
     }
@@ -446,122 +562,163 @@ padding: 160px 75px;
     }
     .slider {
         display: none;
-        /*try to make Slider a background with balck shade over it
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background: none;
-  margin-top: 0;
-  height:100%;*/
     }
-    /*.slider img{
-  top:0;
-  left: 0;
-  height:100%;
-  width: auto;
-}*/
     .indicator {
         display: none;
     }
     /*Services*/
-      .services {
-          padding-top: 45px;
-      }
-      .sec-title {
-          font-size: 22px;
-          letter-spacing: -1px;
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
-          text-align: left;
-      }
-      .title-caption {
-          font-size: 13px;
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
-          text-align: left;
-      }
-      .serv-show-container {
-          flex-direction: column;
-          flex-wrap: nowrap;
-          margin-top: 20px;
-          width: 100vw;
-          margin-left: 0;
-          margin-right: 0;
-      }
-      .serv-icon {
-          width: 30px;
-          vertical-align: middle;
-      }
-      .serv-icon svg {
-          height: 100% !important;
-          width: 100% !important;
-      }
-      .serv-show {
-          height: auto;
-          width: 90%;
-          margin-bottom: 0px;
-          margin-left: auto;
-          margin-right: auto;
-      }
-      .serv-text {
-          display: inline-block;
-          height: 50px;
-          padding-left: 10px;
-      }
-      .serv-text-title {
-          display: block;
-          height: 100%;
-          padding-top: 17px;
-          font-size: 12px;
-      }
-      .serv-text-body {
-          display: none;
-      }
-/*About Us*/
-.left-side{
-  display: none;
-}
-.right-side{
-  width: 100%;
-  background:  linear-gradient(
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.45)
-    ), url("Images/about us.jpg") no-repeat center;
-  background-size: cover;
-  padding: 20px 10px;
-}
-.right-side .sec-title {
-  letter-spacing: -1px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-.right-side p{
-  margin-top: 20px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-
-}
-.right-side .cta{
-  background-color: #ffbb42;
-  margin-top: 20px;
-  width: 130px;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
-
-@media (max-width: 870px) {
+    .services {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .sec-title {
+        font-size: 22px;
+        letter-spacing: -1px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    .title-caption {
+        font-size: 13px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    .serv-show-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 20px;
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .serv-icon {
+        width: 30px;
+        vertical-align: middle;
+    }
+    .serv-icon svg {
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .serv-show {
+        height: auto;
+        width: 90%;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .serv-text {
+        display: inline-block;
+        height: 50px;
         padding-left: 10px;
+    }
+    .serv-text-title {
+        display: block;
+        height: 100%;
+        padding-top: 17px;
+        font-size: 12px;
+    }
+    .serv-text-body {
+        display: none;
+    }
+    /*About Us*/
+    .left-side {
+        display: none;
+    }
+    .right-side {
+        width: 100%;
+        background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("Images/about us.jpg") no-repeat center;
+        background-size: cover;
+        padding: 20px 10px;
+    }
+    .right-side .sec-title {
+        letter-spacing: -1px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    .right-side p {
+        margin-top: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    .right-side .cta {
+        background-color: #ffbb42;
+        margin-top: 20px;
+        width: 130px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*Price Table*/
+    .prices {
+        padding: 20px 10px;
+    }
+    .table {
+        padding-top: 20px;
+        flex-direction: column;
+    }
+    .right-cell, .left-cell {
+        width: 80%;
+        padding: 20px 10px 0px;
+    }
+    .middle-cell {
+        width: 90%;
+        padding: 20px 10px 0px;
+    }
+    .plan-header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .plan-title {
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .plan-price {
+        margin-top: 0;
+        font-size: 30px;
+        padding-left: 7px;
+    }
+    .plan-price span {
+        font-size: 15px;
+    }
+    .price-caption {
+        padding-bottom: 0;
+        display: inline-block;
+        align-self: flex-end;
+    }
+    .plan-expand {
+        display: block;
+        position: absolute;
+        top: -20px;
+        right: -10px;
+    }
+    .plan-expand svg {
+        transition: all 150ms ease-out;
+    }
+    .reversed {
+        transform: rotateZ(180deg);
+        transition: all 150ms ease-out;
+    }
+    .plan-details {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 150ms ease-out;
+    }
+    .expanded {
+        max-height: 166px;
+        transition: max-height 150ms ease-out;
+    }
+    .cta {
+        margin-bottom: 20px;
     }
 }
 

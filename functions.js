@@ -4,22 +4,17 @@ $(document).ready(function() {
         imgsNum = imgs.length,
         IndicatorsNum = indicators.length;
 
-    // Menu Expansion
-    //     if (matchMedia) {
-    //     var mq = window.matchMedia("(max-width: 740px)");
-    //     mq.addListener(console.log("changed"));
-    //     WidthChange(mq);
-    // }
-    //     function WidthChange(mq){
-    //       var menuHeight = -($(".menu").height())-10;
-    //       if (mq.matches) {
-    //         console.log(menuHeight);
-    //     $(".quote").css("transform", "translateY("+(menuHeight)+"px)");
-    //     $(".menu-expand").on("click", function(){
-    //       $(".quote").toggleClass("down");
-    //     });}else{
-    //       $(".quote").css("transform", "translateY("+0+"px)");
-    //     }};
+    // Smooth Scrolling Function
+    (function smoothScroll() {
+        $("a[href^='#']").on("click", function(event) {
+            var target = $($(this).attr("href"));
+            event.preventDefault();
+            $("html body").animate({
+                scrollTop: target.offset().top
+            }, 1000)
+        });
+    })();
+    // Menu Expansion Function
     $(".menu-expand").on("click", function() {
         $(".menu").toggleClass("open");
     });
@@ -44,5 +39,12 @@ $(document).ready(function() {
         indicators.removeClass("active").eq($position).addClass("active");
         imgs.removeClass("in out").eq($position).addClass("in");
         imgs.not(imgs.eq($position)).addClass("out");
+    });
+
+    // Expand Prices Plans Function
+    $(".plan-expand").on("click", function() {
+        var $parent = $($(this).parent());
+        $parent.siblings(".plan-details").toggleClass("expanded");
+        $(this).children("svg").toggleClass("reversed");
     });
 })
