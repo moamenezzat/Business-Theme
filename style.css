@@ -441,6 +441,60 @@ span.active {
     transition: all 200ms ease-in-out;
 }
 
+/*How it works*/
+
+.how{
+  padding: 160px 0 150px;
+}
+
+.step-container{
+  width: 80vw;
+  margin: 80px auto 90px;
+  display: flex;
+  justify-content: space-between;
+  background: url(Images/Icons/work-arrow2.svg),
+                          url(Images/Icons/work-arrow1.svg),
+                          url(Images/Icons/work-arrow2.svg);
+  background-repeat: no-repeat;
+  background-size: 10vw auto;
+  background-position: 21% 0, 49.5% calc(19% + 57px), 79.5% 0;
+  padding-top: 4%;
+}
+.step{
+  width:18.5vw;
+  text-align: center;
+}
+
+.step-img{
+  width: 67px;
+  height: 57px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.step-title{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.1;
+  color: #394b50;
+  margin-bottom: 30px;
+}
+.step-details{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #7b7b7b;
+  line-height: 1.692;
+}
+.how .cta {
+  margin-left: auto;
+  margin-right: auto;
+  width: 191px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 /*Media Queries*/
 
 @media (max-width: 895px) {
@@ -460,6 +514,13 @@ span.active {
 @media (max-width: 870px) {
     .serv-text {
         padding-left: 10px;
+    }
+    .step-title{
+      font-size: 17px;
+    }
+    .step-details{
+      font-size: 12px;
+      line-height: 1.3;
     }
 }
 @media screen and (max-width: 750px) {
@@ -498,13 +559,13 @@ span.active {
         flex-wrap: wrap;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 100ms ease-out;
+        transition: max-height 150ms ease-out;
         padding-right: 0;
     }
     .menu.open {
         max-height: 64px;
         padding-bottom: 10px;
-        transition: max-height 100ms ease-out;
+        transition: max-height 150ms ease-out;
     }
     .menu ul {
         width: inherit;
@@ -569,7 +630,7 @@ span.active {
     /*Services*/
     .services {
         padding-top: 20px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
     .sec-title {
         font-size: 22px;
@@ -653,6 +714,7 @@ span.active {
         width: 130px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 0px;
     }
     /*Price Table*/
     .prices {
@@ -719,6 +781,53 @@ span.active {
     }
     .cta {
         margin-bottom: 20px;
+    }
+    /*How it works*/
+    .how{
+      padding: 20px 10px;
+    }
+    .step-container{
+      flex-direction: column;
+      background: none;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 20px 0 20px;
+      width: 90vw;
+
+    }
+    .step{
+      display: flex;
+      margin-bottom: 10px;
+      width: 100%;
+      align-items: center;
+    }
+    .step-img{
+      margin-bottom: 0px;
+      width:50px;
+      height:40px;
+    }
+    .step-text{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      text-align: left;
+      margin-left: 10px;
+    }
+    .step-title{
+      margin-bottom: 5px;
+      text-align: left;
+      width: 100%;
+    }
+    .step-details{
+      text-align: left;
+      width: 100%;
+    }
+    .how .cta{
+      margin-top: 0;
+      margin-bottom: 0;
     }
 }
 
