@@ -494,6 +494,7 @@ span.active {
   width: 191px;
   padding-left: 30px;
   padding-right: 30px;
+  border: 1px solid #ffbb42;
 }
 /*Media Queries*/
 
