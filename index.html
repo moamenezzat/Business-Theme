@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
 </head>
 
@@ -31,8 +31,8 @@
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#prices">Pricing Table</a></li>
                 <li><a href="#how">How it Works</a></li>
-                <li><a href="#">Happy Clients</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#happy">Happy Clients</a></li>
+                <li><a href="#letter">Contact Us</a></li>
             </ul>
         </div>
     </section>
@@ -42,11 +42,11 @@
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting
         </p>
-        <form>
-            <input type="text" name="Full Name" placeholder="Full Name">
-            <input type="email" name="Email" value="" placeholder="Email Address">
-            <input type="tel" name="Phone Number" value="" placeholder="Phone Number">
-            <input type="submit" value="REQUEST A QUOTE">
+        <form class="form">
+            <input class="form-input input-name input-field" type="text" name="Full Name" placeholder="Full Name">
+            <input class="form-input input-field input-mail" type="email" name="Email" value="" placeholder="Email Address">
+            <input class="form-input input-field input-phone" type="tel" name="Phone Number" value="" placeholder="Phone Number">
+            <input class="form-input input-submit" type="submit" value="REQUEST A QUOTE">
         </form>
         <div class="slider">
             <img class="in" src="Images/screen1.jpg" alt="example picture 1" />
@@ -236,42 +236,154 @@
     </section>
     <!-- How it Works Start -->
     <section class="how" id="how">
-    <h1 class="sec-title">How it works</h1>
-    <p class="title-caption">Lorem Ipsum is simply dummy Business industry</p>
-    <div class="step-container">
-        <div class="step">
-            <img class="step-img" src="Images/Icons/headphones.svg" alt="headphones Picture" />
-            <div class="step-text">
-              <h3 class="step-title">Step 1</h3>
-              <p class="step-details">Lorem Ipsum is simply dummy text of the printing and typesetting ind ustry. Lorem Ipsum has been</p>
+        <h1 class="sec-title">How it works</h1>
+        <p class="title-caption">Lorem Ipsum is simply dummy Business industry</p>
+        <div class="step-container">
+            <div class="step">
+                <img class="step-img" src="Images/Icons/headphones.svg" alt="headphones Picture" />
+                <div class="step-text">
+                    <h3 class="step-title">Step 1</h3>
+                    <p class="step-details">Lorem Ipsum is simply dummy text of the printing and typesetting ind ustry. Lorem Ipsum has been</p>
+                </div>
+            </div>
+            <div class="step">
+                <img class="step-img" src="Images/Icons/lock.svg" alt="Lock Picture" />
+                <div class="step-text">
+                    <h3 class="step-title">Step 2</h3>
+                    <p class="step-details">Lorem Ipsum is simply dummy text of the printing and typesetting ind ustry. Lorem Ipsum has been</p>
+                </div>
+            </div>
+            <div class="step">
+                <img class="step-img" src="Images/Icons/cloud.svg" alt="Cloud Picture" />
+                <div class="step-text">
+                    <h3 class="step-title">Step 3</h3>
+                    <p class="step-details">Lorem Ipsum is simply dummy text of the printing and typesetting ind ustry. Lorem Ipsum has been</p>
+                </div>
+            </div>
+            <div class="step">
+                <img class="step-img" src="Images/Icons/thumbup.svg" alt="Thumb up Picture" />
+                <div class="step-text">
+                    <h3 class="step-title">Step 4</h3>
+                    <p class="step-details">Lorem Ipsum is simply dummy text of the printing and typesetting ind ustry. Lorem Ipsum has been</p>
+                </div>
             </div>
         </div>
-        <div class="step">
-            <img class="step-img" src="Images/Icons/lock.svg" alt="Lock Picture" />
-            <div class="step-text">
-            <h3 class="step-title">Step 2</h3>
-            <p class="step-details">Lorem Ipsum is simply dummy text of the printing and typesetting ind ustry. Lorem Ipsum has been</p>
-          </div>
-        </div>
-        <div class="step">
-            <img class="step-img" src="Images/Icons/cloud.svg" alt="Cloud Picture" />
-            <div class="step-text">
-            <h3 class="step-title">Step 3</h3>
-            <p class="step-details">Lorem Ipsum is simply dummy text of the printing and typesetting ind ustry. Lorem Ipsum has been</p>
-          </div>
-        </div>
-        <div class="step">
-            <img class="step-img" src="Images/Icons/thumbup.svg" alt="Thumb up Picture" />
-            <div class="step-text">
-            <h3 class="step-title">Step 4</h3>
-            <p class="step-details">Lorem Ipsum is simply dummy text of the printing and typesetting ind ustry. Lorem Ipsum has been</p>
-          </div>
-        </div>
-    </div>
-    <a href="#" class="cta">get started now</a>
+        <a href="#" class="cta">get started now</a>
 
-</section>
-    <script src="functions.js"></script>
+    </section>
+    <!-- Happy Clients Start -->
+    <section class="happy" id="happy">
+        <h1 class="sec-title">Happy clients</h1>
+        <p class="title-caption">We explain who is using our business solutions</p>
+        <div class="clients-container">
+            <div class="client">
+                <img class="client-img" alt="Client - Img 1" src="Images/test1.jpg" />
+                <div class="client-text">
+                    <p class="client-quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrystandard dummy text ever since the 1500s, wen an unknown printer took a galley of type and scrambled to make.</p>
+                    <h3 class="client-name"><span>Darwin Michle,</span><span> Project manager</span></h3>
+                </div>
+            </div>
+            <div class="client">
+                <img class="client-img" alt="Client - Img 2" src="Images/test2.jpg" />
+                <div class="client-text">
+                    <p class="client-quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrystandard dummy text ever since the 1500s, wen an unknown printer took a galley of type and scrambled to make.</p>
+                    <h3 class="client-name"><span>Madam Elisabath,</span><span> Creative Director</span></h3>
+                </div>
+            </div>
+            <div class="client">
+                <img class="client-img" alt="Client - Img 3" src="Images/test3.jpg" />
+                <div class="client-text">
+                    <p class="client-quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrystandard dummy text ever since the 1500s, wen an unknown printer took a galley of type and scrambled to make.</p>
+                    <h3 class="client-name"><span>Clips arter,</span> Lipsum directer</h3>
+                </div>
+            </div>
+            <div class="client">
+                <img class="client-img" alt="Client - Img 4" src="Images/test4.jpg" />
+                <div class="client-text">
+                    <p class="client-quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrystandard dummy text ever since the 1500s, wen an unknown printer took a galley of type and scrambled to make.</p>
+                    <h3 class="client-name"><span>zam cristafr,</span> Manager</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Newsletter Start -->
+    <section class="letter" id="letter">
+        <h1 class="sec-title">newsletter</h1>
+        <p class="title-caption">Lorem Ipsum is simply dummy Business industry</p>
+        <form class="form">
+            <input class="form-input input-name input-field" type="text" name="Full Name" placeholder="Full Name">
+            <input class="form-input input-field input-mail" type="email" name="Email" value="" placeholder="Email Address">
+            <input class="form-input input-submit" type="submit" value="Subscribe NOW">
+        </form>
+        <div class="map">
+            <div class="contact">
+                <h3 class="address-title">Contact</h3>
+                <p class="address-details">
+                    Business street
+                    <br> Second north section
+                    <br> Bavani nagar. 88769
+                    <br> Call : +987-9976-999
+                    <br>
+                    <span>info@businessface.com</span>
+                </p>
+            </div>
+            <img src="Images/logo.png" alt="Logo" />
+        </div>
+        <div class="menu bottom-menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#prices">Pricing Table</a></li>
+                <li><a href="#how">How it Works</a></li>
+                <li><a href="#happy">Happy Clients</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <p class="phone">
+            +987 9976 999
+        </p>
+        <div class="social">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 118.765 104.513">
+                    <path d="M928.838,3058.08a18.88,18.88,0,0,0,8.552-10.72,38.047,38.047,0,0,1-12.347,4.7,19.461,19.461,0,0,0-33.667,13.31,21.582,21.582,0,0,0,.482,4.46,54.089,54.089,0,0,1-22.375-6,54.968,54.968,0,0,1-17.737-14.36,19.5,19.5,0,0,0-.3,19.09,19.478,19.478,0,0,0,6.324,6.93,19.367,19.367,0,0,1-8.793-2.47v0.24a18.767,18.767,0,0,0,4.427,12.37,19.094,19.094,0,0,0,11.172,6.72,20.2,20.2,0,0,1-5.119.66,24.73,24.73,0,0,1-3.674-.3,19.514,19.514,0,0,0,18.189,13.49,38.1,38.1,0,0,1-24.152,8.31,41.787,41.787,0,0,1-4.7-.24,54.038,54.038,0,0,0,29.874,8.73,56.828,56.828,0,0,0,19.453-3.28,49.587,49.587,0,0,0,15.539-8.79,58.957,58.957,0,0,0,11.112-12.68,56.5,56.5,0,0,0,6.957-14.96,55.3,55.3,0,0,0,2.288-15.63c0-1.12-.02-1.97-0.06-2.53a40.68,40.68,0,0,0,9.757-10.06,38.583,38.583,0,0,1-11.2,3.01h0Z" transform="translate(-833.196 -3032.198)" />
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 97.504 175.507">
+                    <path d="M619.3,3029.94q-15.548,0-24.892,9.25-9.346,9.27-9.345,26.05v19.69H562.15v26.72h22.915v68.53h27.5v-68.53h22.825l3.505-26.72h-26.33v-17.07q0-6.495,2.7-9.75t10.424-3.25H639.79v-23.84a148.422,148.422,0,0,0-20.488-1.08h0Z" transform="translate(-552.217 -3017.31)"
+                    />
+                </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 151.332 157.385">
+                <path d="M900.592,3101.63a30.4,30.4,0,0,1,4.551-4.77q2.676-2.3,5.316-5.05a23.435,23.435,0,0,0,4.512-7.22,27.97,27.97,0,0,0-1.032-22.48,36.8,36.8,0,0,0-8.566-10.33h10.019l10.555-6.83H893.976a56.409,56.409,0,0,0-16.635,2.48,38.136,38.136,0,0,0-13.959,7.61,29.971,29.971,0,0,0-7.572,10.17,29.248,29.248,0,0,0-2.754,12.35q0,11.49,7.764,18.99a26.444,26.444,0,0,0,19.083,7.49c1.121,0,2.855-.1,5.2-0.31a17.428,17.428,0,0,0-1.606,6.6,13.025,13.025,0,0,0,1.185,5.67,35.235,35.235,0,0,0,3.633,5.74q-20.88,1.4-30.9,7.77a28.683,28.683,0,0,0-9.063,8.93,21.278,21.278,0,0,0-3.4,11.64,19.253,19.253,0,0,0,2.83,10.18,24.345,24.345,0,0,0,13.117,10.67,54.137,54.137,0,0,0,18.854,3.23,58.206,58.206,0,0,0,22.793-4.47,32.733,32.733,0,0,0,16.138-13.94,26.732,26.732,0,0,0,3.671-13.43,24.654,24.654,0,0,0-2.447-11.03,26.47,26.47,0,0,0-5.89-8.07q-3.441-3.1-6.922-5.71a41.756,41.756,0,0,1-5.927-5.28,8.123,8.123,0,0,1-2.448-5.47A8.438,8.438,0,0,1,900.592,3101.63Zm-20.421-4.35a19.085,19.085,0,0,1-5.737-5.2,33.679,33.679,0,0,1-3.977-7.18,41.422,41.422,0,0,1-2.409-8,40.228,40.228,0,0,1-.765-7.57q0-7.845,3.6-12.42a13.538,13.538,0,0,1,5.009-4.08,14.084,14.084,0,0,1,15.259,1.67,23.085,23.085,0,0,1,6.463,8.04,49.479,49.479,0,0,1,3.71,10.05,40.262,40.262,0,0,1,1.3,9.71q0,7.92-4.054,12.34a14.553,14.553,0,0,1-5.048,3.38,15.281,15.281,0,0,1-5.966,1.28A14.17,14.17,0,0,1,880.171,3097.28Zm-2.219,68.68a38.146,38.146,0,0,1-9.1-3.41,18.553,18.553,0,0,1-7-6.45,17.3,17.3,0,0,1-2.677-9.59,16.222,16.222,0,0,1,2.065-8.19,17.223,17.223,0,0,1,5.24-5.78,29.475,29.475,0,0,1,7.419-3.58,47.245,47.245,0,0,1,8.222-1.94,59.614,59.614,0,0,1,8.031-.54,32.885,32.885,0,0,1,3.671.15c0.153,0.11,1.083.78,2.792,2.02s2.765,2.02,3.174,2.33,1.339,1.06,2.792,2.25a27.542,27.542,0,0,1,2.944,2.68c0.51,0.6,1.263,1.51,2.257,2.72a13.529,13.529,0,0,1,2.065,3.22,32.763,32.763,0,0,1,1.109,3.26,13.846,13.846,0,0,1,.535,3.81,16.626,16.626,0,0,1-2.1,8.46,15.081,15.081,0,0,1-5.583,5.67,28.49,28.49,0,0,1-7.572,3.03,35.647,35.647,0,0,1-8.529,1.01A42.427,42.427,0,0,1,877.952,3165.96Zm71.706-83.74h-8.031v16.85H925.412v8.39h16.215v17h8.031v-17h16.291v-8.39H949.658v-16.85Z" transform="translate(-829.772 -3030.858)"/>
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 190.114 190.114">
+                  <path d="M888.881,3183v98.07h32.67V3183h-32.67Zm29.7-42.4q-4.952-4.8-13.167-4.8t-13.315,4.8a15.928,15.928,0,0,0-5.1,12.12,16.232,16.232,0,0,0,4.95,12.08q4.95,4.845,13.068,4.84h0.2q8.316,0,13.415-4.84a15.689,15.689,0,0,0,5-12.08A16.5,16.5,0,0,0,918.581,3140.6Zm110.189,51.36q-10.305-11.235-27.23-11.23a39.335,39.335,0,0,0-11.331,1.53,25.611,25.611,0,0,0-8.613,4.31,41.889,41.889,0,0,0-5.594,5.14,42.893,42.893,0,0,0-4.059,5.54h0.2V3183H939.57l0.1,4.75q0.1,4.755.1,29.29t-0.2,64.03h32.571v-54.73a23.876,23.876,0,0,1,1.089-8.01,20.958,20.958,0,0,1,6.287-8.46,16.017,16.017,0,0,1,10.444-3.42q8.514,0,12.529,5.89t4,16.28v52.45h32.58v-56.21Q1039.07,3203.185,1028.77,3191.96Z" transform="translate(-867.973 -3113.378)"/>
+              </svg>
+            </a>
+        </div>
+    </section>
+    <!-- Footer Start -->
+    <footer>
+        <div>
+            <p>
+                All contents © copyright 2014 Business Theme. All rights reserved Designed by:
+            </p>
+            <a href="https://www.behance.net/akhilwebdesigner">Akhil VR</a>
+        </div>
+        <div>
+            <p>
+                Developed for the web by:
+            </p>
+            <a href="https://github.com/moamenezzat/Business-Theme">Mo'men Ezzat</a>
+        </div>
+    </footer>
+<script src="functions.js"></script>
 </body>
 
 </html>

@@ -2,16 +2,17 @@ $(document).ready(function() {
     var imgs = $(".slider img"),
         indicators = $(".indicator span"),
         imgsNum = imgs.length,
-        IndicatorsNum = indicators.length;
+        IndicatorsNum = indicators.length,
+        contactWidth =  $(".contact").width();
 
     // Smooth Scrolling Function
     (function smoothScroll() {
         $("a[href^='#']").on("click", function(event) {
             var target = $($(this).attr("href"));
             event.preventDefault();
-            $("html body").animate({
+            $("html, body").animate({
                 scrollTop: target.offset().top
-            }, 1000)
+            }, 1000);
         });
     })();
     // Menu Expansion Function
@@ -29,7 +30,7 @@ $(document).ready(function() {
             imgs.eq(0).removeClass("out").addClass("in");
             indicators.eq(curImg).removeClass("active")
             indicators.eq(0).addClass("active");
-        };
+        }
     }, 5000);
 
     // Indicators Clicking Function
@@ -47,4 +48,7 @@ $(document).ready(function() {
         $parent.siblings(".plan-details").toggleClass("expanded");
         $(this).children("svg").toggleClass("reversed");
     });
-})
+    // Contact section height
+    $(".contact").css({"height": contactWidth + "px"}).css({
+  "top": " calc( 50% - "+ contactWidth +"px)"}).css({"left": " calc( 50% - "+ contactWidth/2 +"px)"});
+});

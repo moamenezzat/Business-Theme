@@ -101,12 +101,13 @@
     text-align: center;
     font-size: 16px;
 }
-.quote form {
+.form {
     padding-top: 20px;
     display: flex;
     justify-content: center;
 }
-.quote form input {
+
+.form-input {
     display: inline-block;
     width: 280px;
     height: 45px;
@@ -119,19 +120,19 @@
     font-size: 13px;
     color: #a9a9a9;
 }
-.quote form input[name="Full Name"] {
+.input-name {
     background: url(Images/Icons/user-shape.svg) no-repeat 5px, white;
     background-size: 15px 15px;
 }
-.quote form input[name="Email"] {
+.input-mail {
     background: url(Images/Icons/envelope.svg) no-repeat 5px, white;
     background-size: 15px 15px;
 }
-.quote form input[name="Phone Number"] {
+.input-phone {
     background: url(Images/Icons/telephone.svg) no-repeat 5px, white;
     background-size: 15px 15px;
 }
-.quote form input[type="submit"] {
+.input-submit {
     width: auto;
     padding: 0 30px;
     margin-right: 0;
@@ -140,19 +141,21 @@
     cursor: pointer;
     font-size: 14px;
     border: 1px solid #ffbb42;
+    text-transform: uppercase;
     transition: all 200ms ease-in-out;
 }
-.quote form input[type="submit"]:hover {
+.input-submit:hover {
     background-color: white;
     color: #868686;
     border: 1px solid #ffbb42;
     transition: all 200ms ease-in-out;
 }
-.quote form input:not([type="submit"]) {
+
+.input-field {
     border: 1px solid white;
     transition: all 200ms ease-in-out;
 }
-.quote form input:not([type="submit"]):focus {
+.input-field:focus {
     outline: none;
     border: 1px solid #ffbb42;
     transition: all 200ms ease-in-out;
@@ -492,13 +495,305 @@ span.active {
   margin-left: auto;
   margin-right: auto;
   width: 191px;
-  padding-left: 30px;
-  padding-right: 30px;
   border: 1px solid #ffbb42;
 }
-/*Media Queries*/
 
+/*Happy Clients*/
+.happy{
+  background: #ffc155;
+  padding-top: 140px;
+  padding-bottom: 160px;
+}
+.happy .sec-title,
+.happy .title-caption{
+color: white
+}
+.clients-container{
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  justify-content: space-between;
+}
+.client{
+  width:47%;
+  background: white;
+  border-radius: 2px;
+  padding: 20px 30px;
+  display: flex;
+  margin-bottom: 20px;
+
+}
+.client-img{
+  height:90px;
+  width: 90px;
+  border-radius: 50%;
+}
+.client-text{
+  height: 100%;
+}
+.client-quote{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #7b7b7b;
+  padding-left: 20px;
+  padding-right: 5px;
+  background: url(Images/quote-left.png), url(Images/quote-right.png);
+  background-repeat: no-repeat;
+  background-position: 0 0, 100% 100%;
+}
+.client-name{
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #99a9ae;
+  margin-top: 25px;
+  padding-left: 20px;
+}
+.client-name span:first-child{
+  color: #f6772c;
+}
+.client-name span:last-child{
+  white-space: nowrap;
+}
+
+/*Newsletter*/
+.letter{
+  padding-top: 160px;
+  padding-bottom: 50px;
+}
+
+.letter .form{
+  padding-top: 40px;
+  padding-left: 6px;
+  padding-right: 6px;
+
+}
+.letter .input-mail{
+width:400px;
+}
+.letter .input-field{
+  border:1px solid #cbcbcb;
+  transition: all 200ms ease-in-out;
+}
+.letter .input-field:focus{
+  border: 1px solid #ffbb42;
+  transition: all 200ms ease-in-out;
+}
+.map{
+  width:80vw;
+  height:500px;
+  background: url(Images/map.png) no-repeat center;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+.contact{
+  width: 22%;
+  height:auto;
+  background: url(Images/bubble.png) no-repeat center;
+  background-size: contain;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+}
+.address-title{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color:white;
+  text-transform: uppercase;
+  line-height: 2;
+  margin-top: -10px;
+}
+.address-details{
+font-family: 'Lato', sans-serif;
+font-size: 12px;
+color:#aeb7ba;
+line-height: 1.3;
+}
+.address-details span{
+  color: #ffbb42;
+}
+.map img{
+  width:20px;
+  height: auto;
+  position: absolute;
+  left: calc(50% - 10px);
+  top:50%;
+}
+.bottom-menu{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  border-top: 1px solid #aeb7ba;
+
+}
+.bottom-menu ul {
+  width: 100%;
+  justify-content: center;
+}
+.bottom-menu ul li {
+  position: relative;
+}
+.bottom-menu ul li a {
+  font-size: 13px;
+  padding: 0 7px;
+}
+.bottom-menu ul li::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ffbb42;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.bottom-menu ul li:hover::after {
+  bottom: 15px;
+  left: 0;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+.bottom-menu ul li:hover a {
+    background-color: transparent;
+    color: black;
+    transition: all 200ms ease-in-out;
+}
+.phone{
+display: block;
+  font-size: 22.5px;
+  font-family: "lato", sans-serif;
+  color:#394b50;
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(Images/Icons/telephone.svg) no-repeat 0 center ;
+  background-size: 15px 15px;
+}
+.social{
+  width: 114px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.social a{
+  display: inline-block;
+  width: auto;
+}
+.social a svg {
+  fill:#709dca;
+  transition: all 150ms ease-in-out;
+}
+.social a:hover svg{
+  fill:#ffc155;
+  transition: all 150ms ease-in-out;
+}
+footer{
+  height: auto;
+  background: #709dca;
+  padding: 3px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+footer div p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: white;
+  line-height: 1.8;
+  display: inline-block;
+}
+footer div a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: white;
+  line-height: 1.8;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 150ms ease-in-out;
+}
+footer div a:hover{
+  color: #ffc155;
+  transition: all 150ms ease-in-out;
+}
+
+/*Media Queries*/
+@media (min) {
+
+}
+@media (min-width:1550px) {
+  .contact{
+  width: 18%;
+  }
+  .address-title{
+    font-size: 18px;
+  }
+  .address-details{
+    font-size: 16px;
+  }
+}
+@media (min-width:1850px) {
+.step-container{
+  background-position: 21% 0, 49.5% calc(30% + 57px), 79.5% 0;
+}
+  .contact{
+  width: 15.5%;
+  }
+  .address-title{
+    font-size: 20px;
+  }
+  .address-details{
+    font-size: 17px;
+  }
+}
+
+@media (min-width:2400px) {
+  .step-container{
+    background-position: 21% 0, 49.5% calc(42% + 57px), 79.5% 0;
+  }
+}
+@media (max-width:960px) {
+  /*Happy clients*/
+  .client{
+    padding: 10px;
+  }
+  .client-img{
+    width: 60px;
+    height: 60px;
+  }
+  .client-quote{
+    font-size: 11.5px;
+  }
+  .client-name{
+    font-size: 12px;
+  }
+  .contact{
+    width: 30%;
+  }
+}
 @media (max-width: 895px) {
+  /*Prices Table*/
     .plan-side, .plan-middle {
         font-size: 10.5px;
     }
@@ -513,6 +808,7 @@ span.active {
     }
 }
 @media (max-width: 870px) {
+/*How it works*/
     .serv-text {
         padding-left: 10px;
     }
@@ -522,6 +818,9 @@ span.active {
     .step-details{
       font-size: 12px;
       line-height: 1.3;
+    }
+    .contact{
+      width: 28%;
     }
 }
 @media screen and (max-width: 750px) {
@@ -652,7 +951,7 @@ span.active {
         flex-direction: column;
         flex-wrap: nowrap;
         margin-top: 20px;
-        width: 100vw;
+        width: 90vw;
         margin-left: 0;
         margin-right: 0;
     }
@@ -667,7 +966,7 @@ span.active {
     .serv-show {
         height: auto;
         width: 90%;
-        margin-bottom: 0px;
+        margin-bottom: 0;
         margin-left: auto;
         margin-right: auto;
     }
@@ -715,7 +1014,7 @@ span.active {
         width: 130px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
     /*Price Table*/
     .prices {
@@ -727,11 +1026,11 @@ span.active {
     }
     .right-cell, .left-cell {
         width: 80%;
-        padding: 20px 10px 0px;
+        padding: 20px 10px 0;
     }
     .middle-cell {
         width: 90%;
-        padding: 20px 10px 0px;
+        padding: 20px 10px 0;
     }
     .plan-header {
         display: flex;
@@ -803,7 +1102,7 @@ span.active {
       align-items: center;
     }
     .step-img{
-      margin-bottom: 0px;
+      margin-bottom: 0;
       width:50px;
       height:40px;
     }
@@ -829,6 +1128,84 @@ span.active {
     .how .cta{
       margin-top: 0;
       margin-bottom: 0;
+    }
+    /*Happy clients*/
+    .happy{
+      padding: 20px 10px;
+    }
+    .clients-container{
+      width: auto;
+      position: relative;
+      padding-top: 20px;
+    }
+    .client{
+      width: 100%;
+    }
+    /*Newesltter*/
+    .letter{
+    padding: 20px 10px;
+    }
+    .letter .form{
+      padding-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+    }
+    .letter .form-input {
+      width: 300px;
+      margin-top: 5px;
+      margin-right: 0;
+    }
+    .map{
+      height: auto;
+      width: 100vw;
+      margin: 20px -10px 10px;
+    }
+    .contact{
+      position: relative;
+      height: auto !important;
+      width: 100%;
+      background: none, rgba(57, 75, 80,.5);
+      top: auto !important;
+      left: auto !important;
+      padding: 5px 0;
+    }
+    .address-title{
+      margin-top: 0;
+    }
+    .address-details{
+      color: white;
+    }
+    .map img{
+      position: relative;
+      display: none;
+    }
+    .bottom-menu{
+      display: none;
+    }
+    .phone {
+      display: none;
+    }
+    .social{
+      width:93px;
+      margin-top: 20px;
+    }
+    .social a svg{
+      height: 20px;
+      width: 20px;
+    }
+    /*Footer*/
+    footer{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    footer div p{
+      display: inline;
+      font-size: 10px;
+    }
+    footer div a{
+      color:#ffbb42;
     }
 }
 
