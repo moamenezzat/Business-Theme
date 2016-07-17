@@ -604,7 +604,7 @@ span.active {
     align-items: center;
     justify-content: center;
     align-content: center;
-    position: absolute;
+    position: relative;
 }
 .address-title {
     font-family: 'Open Sans', sans-serif;
@@ -767,6 +767,10 @@ footer div a:hover {
     .step-container {
         background-position: 21% 0, 49.5% calc(42% + 57px), 79.5% 0;
     }
+}
+@media (min-width:2200px) {
+  .contact {
+      width: 13.5%;
 }
 @media (max-width:960px) {
     /*Happy clients*/

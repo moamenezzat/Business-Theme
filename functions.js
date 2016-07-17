@@ -3,7 +3,7 @@ $(document).ready(function() {
         indicators = $(".indicator span"),
         imgsNum = imgs.length,
         IndicatorsNum = indicators.length,
-        contactWidth =  $(".contact").width();
+        contactWidth = $(".contact").width();
 
     // Smooth Scrolling Function
     (function smoothScroll() {
@@ -49,6 +49,18 @@ $(document).ready(function() {
         $(this).children("svg").toggleClass("reversed");
     });
     // Contact section height
-    $(".contact").css({"height": contactWidth + "px"}).css({
-  "top": " calc( 50% - "+ contactWidth +"px)"}).css({"left": " calc( 50% - "+ contactWidth/2 +"px)"});
+    $(".contact").css({
+            "height": contactWidth + "px"
+        })
+        // .css({
+        //     "top": " calc( 50% - " + contactWidth + "px)"
+        // }).css({
+        //     "left": " calc( 50% - " + contactWidth / 2 + "px)"
+        // });
+    var mapOffset = $(".map").offset().top;
+    var mapHalfHeight = ($(".map").height()) / 2;
+    console.log(mapOffset, mapHalfHeight);
+    $(".contact").offset({
+        top: (mapOffset + (mapHalfHeight - contactWidth))
+    });
 });
