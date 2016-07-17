@@ -751,7 +751,7 @@ footer div a:hover {
 }
 @media (min-width:1850px) {
     .step-container {
-        background-position: 21% 0, 49.5% calc(30%+ 57px), 79.5% 0;
+        background-position: 21% 0, 49.5% calc(30% + 57px), 79.5% 0;
     }
     .contact {
         width: 15.5%;
@@ -765,7 +765,7 @@ footer div a:hover {
 }
 @media (min-width:2400px) {
     .step-container {
-        background-position: 21% 0, 49.5% calc(42%+ 57px), 79.5% 0;
+        background-position: 21% 0, 49.5% calc(42% + 57px), 79.5% 0;
     }
 }
 @media (max-width:960px) {
