@@ -737,7 +737,7 @@ footer div a:hover {
 
 /*Media Queries*/
 
-@media (min) {}
+
 @media (min-width:1550px) {
     .contact {
         width: 18%;
